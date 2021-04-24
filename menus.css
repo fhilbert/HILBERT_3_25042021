@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.headerTitle {
+  padding: 20px 0px 10px 0px;
+  height: 5vh;
+  diplay: flex;
+}
+
+.header_logo {
+  padding: 20px 0px 10px 0px;
+  height: 5vh;
+}
+
+#logo {
+  width: 40vw;
+}
+
+.headerRestaurant {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRestaurantTitle {
+  display: flex;
+  z-index: 9;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  font-family: Shrikhand, sans-serif;
+  background-color: #fff;
+  margin-top: -30px;
+  padding: 30px 20px 0px 20px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.photo {
+  width: 100vw;
+  height: 240px;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=menus.css.map */
