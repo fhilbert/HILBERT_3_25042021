@@ -1,5 +1,13 @@
+$primary:#9356DC;
+$secondary:#FF79DA;
+$tertiairy:#99E2D0;
+
+
+
 body{
     margin:0;
+    background-color: beige; //rgb(246,246,246);
+    font-family: Roboto, sans-serif;
 }
 header{
     width:100%;
@@ -8,15 +16,19 @@ header{
     padding :20px 0px 10px 0px;
     height:5vh;
     diplay:flex;
+  //  flex-direction: column;
+ //   justify-content: center;
 
 }
 .header_logo{
- //   text-align: center;
-    padding :20px 0px 10px 0px;
-    height:5vh;
+  //  padding :20px 0px 10px 0px;
+  //  height:5vh;
+  width:30vw;
 }
 #logo{
-    width: 40vw;
+    width: 30vw;
+ //   display: flex;
+ //   justify-content: center;
 }
 .headerRestaurant{
     display: flex;
@@ -28,13 +40,10 @@ header{
     justify-content: space-around;
     font-size: 1.8rem;
     font-family: Shrikhand, sans-serif;
-    background-color: #fff;
+    background-color:beige; //rgb(246,246,246);
     margin-top: -30px;
     padding : 30px 20px 0px 20px;
     border-radius: 40px 40px 0px 0px;
-    //border: blue solid 1px;
-
-
 }
 .photo{
     width:100vw;
@@ -42,4 +51,97 @@ header{
     // border-radius: 15px 15px 0px 0px;
     text-align: center;
     object-fit: cover;
+}
+.starterLabelTitle{
+    margin-top: 30px;
+    border-bottom: 2px solid $tertiairy;
+    width:30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.starterLabel{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px 10px 10px;
+}
+.starterLabelAside{
+    display: flex;
+    align-items: flex-end;
+}
+.mainLabelTitle{
+    margin-top: 30px;
+    border-bottom: 2px solid $tertiairy;
+    width:30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+.mainLabel{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px 10px 10px;
+}
+.mainLabelAside{
+    display: flex;
+    align-items: flex-end;
+}
+.desertLabelTitle{
+    margin-top: 30px;
+    border-bottom: 2px solid $tertiairy;
+    width:30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.desertLabel{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px 10px 10px;
+}
+
+.desertLabelAside{
+    display: flex;
+    align-items: flex-end;
+}
+.commander{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width:170px;
+    margin: 30px auto;
+    border-radius: 25px;
+    color: #fff;
+    background-color: $secondary;
+}
+footer{
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    line-height: 2rem;    
+    img{
+        padding-top: 20px;
+        width: 28vw;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
+    }
+}
+.footerLogo{
+    width:5vw;
+    margin-right: 0.7rem;
+}
+.footerLigne{
+    display: flex;
+    flex-direction: row;
 }
