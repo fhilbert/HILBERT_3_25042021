@@ -129,7 +129,8 @@ section {
 }
 
 .insideLabel {
-  width: 340px;
+  position: relative;
+  width: 90vw;
   height: 250px;
   border-radius: 15px;
   background-color: #fff;
@@ -147,10 +148,10 @@ section {
 }
 
 section .new {
-  display: flex;
-  justify-content: center;
   position: absolute;
-  left: 70%;
+  top: 15px;
+  right: 15px;
+  width: 50px;
   font-size: 12px;
   font-weight: bold;
   background: #99E2D0;

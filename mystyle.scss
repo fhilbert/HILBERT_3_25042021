@@ -127,7 +127,8 @@ section{
     align-items: center;
 }
 .insideLabel{
-    width: 340px; // 340 x 250
+    position: relative;
+    width: 90vw; // 340 x 250
     height: 250px;
 	border-radius: 15px;
 	background-color: #fff;
@@ -142,11 +143,12 @@ section{
     object-fit: cover;
 }
 section .new{
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
     position: absolute;
-    //top: 2%;
-    left: 70%;
+    top: 15px;
+    right: 15px;
+    width:50px;
     font-size: 12px;
     font-weight: bold;
     background: #99E2D0;

@@ -66,32 +66,60 @@ header{
 .starterLabelTitle{
     margin-top: 30px;
     border-bottom: 2px solid $tertiairy;
-    width:30px;
+    width:35px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.starterLabel{
+.starterLabel,
+.mainLabel,
+.desertLabel{
     display: flex;
     justify-content: space-between;
     border: 2px solid aqua;
     background-color:#fff;
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
-    padding:10px 20px 10px 10px;
+   // padding:10px 20px 10px 10px;
 }
-.starterLabelAside{
+.labelMenu{
+    padding:10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.LabelText1,
+.LabelText2{
+    width:70vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.LabelAside{
     display: flex;
     align-items: flex-end;
+}
+.check{
+    width:40px;
+    display: flex;
+  //  display:none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+
+    color: $tertiairy;
+    background-color: $tertiairy;
+    i{
+        color: #fff;
+    }
 }
 .mainLabelTitle{
     margin-top: 30px;
     border-bottom: 2px solid $tertiairy;
-    width:30px;
+    width:35px;
     margin-bottom: 20px;
     text-transform: uppercase;
 
 }
-.mainLabel{
+/*.mainLabel{
     display: flex;
     justify-content: space-between;
     border: 2px solid aqua;
@@ -99,20 +127,20 @@ header{
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
     padding:10px 20px 10px 10px;
-}
-.mainLabelAside{
+}*/
+.LabelAside{
     display: flex;
     align-items: flex-end;
 }
 .desertLabelTitle{
     margin-top: 30px;
     border-bottom: 2px solid $tertiairy;
-    width:30px;
+    width:35px;
     margin-bottom: 20px;
     text-transform: uppercase;
 
 }
-
+/*
 .desertLabel{
     display: flex;
     justify-content: space-between;
@@ -122,8 +150,8 @@ header{
     border-radius: 15px 15px 15px 15px;
     padding:10px 20px 10px 10px;
 }
-
-.desertLabelAside{
+*/
+.LabelAside{
     display: flex;
     align-items: flex-end;
 }

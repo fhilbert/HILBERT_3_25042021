@@ -53,57 +53,13 @@ header {
 .starterLabelTitle {
   margin-top: 30px;
   border-bottom: 2px solid #99E2D0;
-  width: 30px;
+  width: 35px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.starterLabel {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid aqua;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 15px 15px 15px 15px;
-  padding: 10px 20px 10px 10px;
-}
-
-.starterLabelAside {
-  display: flex;
-  align-items: flex-end;
-}
-
-.mainLabelTitle {
-  margin-top: 30px;
-  border-bottom: 2px solid #99E2D0;
-  width: 30px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.mainLabel {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid aqua;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 15px 15px 15px 15px;
-  padding: 10px 20px 10px 10px;
-}
-
-.mainLabelAside {
-  display: flex;
-  align-items: flex-end;
-}
-
-.desertLabelTitle {
-  margin-top: 30px;
-  border-bottom: 2px solid #99E2D0;
-  width: 30px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
+.starterLabel,
+.mainLabel,
 .desertLabel {
   display: flex;
   justify-content: space-between;
@@ -111,10 +67,82 @@ header {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
-  padding: 10px 20px 10px 10px;
 }
 
-.desertLabelAside {
+.labelMenu {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LabelText1,
+.LabelText2 {
+  width: 70vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.LabelAside {
+  display: flex;
+  align-items: flex-end;
+}
+
+.check {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  color: #99E2D0;
+  background-color: #99E2D0;
+}
+.check i {
+  color: #fff;
+}
+
+.mainLabelTitle {
+  margin-top: 30px;
+  border-bottom: 2px solid #99E2D0;
+  width: 35px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*.mainLabel{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px 10px 10px;
+}*/
+.LabelAside {
+  display: flex;
+  align-items: flex-end;
+}
+
+.desertLabelTitle {
+  margin-top: 30px;
+  border-bottom: 2px solid #99E2D0;
+  width: 35px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*
+.desertLabel{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid aqua;
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px 10px 10px;
+}
+*/
+.LabelAside {
   display: flex;
   align-items: flex-end;
 }
