@@ -23,12 +23,23 @@ header{
 .header_logo{
   //  padding :20px 0px 10px 0px;
   //  height:5vh;
-  width:30vw;
+  width:40vw;
+  display:flex;
+  //  flex-direction: column;
+    justify-content: center;
+
 }
 #logo{
-    width: 30vw;
+    width: 40vw;
  //   display: flex;
  //   justify-content: center;
+}
+#arrow{
+    // display: absolute;
+    // top:20px;
+    // left:20px;
+    // justify-content: flex-start;
+
 }
 .headerRestaurant{
     display: flex;

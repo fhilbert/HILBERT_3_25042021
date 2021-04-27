@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Roughly 155 characters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="menus.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://kit.fontawesome.com/6c4bf069e4.js" crossorigin="anonymous"></script>
@@ -12,63 +12,182 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-
-        <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" width=300px height=200px alt="La note enchantée"
-        class="photo">
-
-        Page 2
-
-        La note enchantée
-
-Entrées
-Ravioles de foie gras 
-Accompagnés de leur crème à la truffe
-25€
-
-Caviar osciètre 
-Sur blini à la farine de blé noir
-35€
-
-Homard et espuma de potiron
-Mariné aux zestes d'orange
-20€
-
-Foie gras de canard cuit entier
-Confiture de figue et pain toasté
-35€
-        
-Plats
-Noix de coquilles Saint-Jacques
-Sur lit de purée de céleri-rave
-40€
-
-Langoustine poêlée
-Purée de patate douce
-35€
-
-Mijoté de queue de boeuf 
-Et riz sauvage aux zestes de citron
-44€
-
-Desserts
-Macaron noisette et chocolat
-Glace au caramel brun et sel de Guérande
-18€
-
-Baba au rhum revisité 
-Avec son coulis de citron
-22€
-
-Tarte au citron meringuée 
-Déstructurée
-23€
-
-
+        <div class="headerTitle">
+                <a href="index.html" id="arrow"><i class="fas fa-arrow-left"></i></a>
+            <div class="header_logo">
+                <img src="images/ohmyfood.png" id="logo" alt="Oh my food" />
+            </div>
+        </div>
+        <div class="headerRestaurant">
+            <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"
+            class="photo">
+            <div class="headerRestaurantTitle">
+                <div class="headerRestaurantText">La note enchantée</div>
+                <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+        </div>
     </header>
-    
+    <section>
+        <div class="starter">
+            <div class="starterLabelTitle">
+                Entrées
+            </div>
+            <div class="starterLabel">
+                <div class="starterLabelText">
+                    <div class="starterLabelText1">
+                        Ravioles de foie gras 
+                    </div>
+                    <div class="starterLabelText2">
+                        Accompagnés de leur crème à la truffe
+                    </div>
+                </div>
+                <div class="starterLabelAside">
+                    25€
+                </div>
+            </div>
+            <div class="starterLabel">
+                <div class="starterLabelText">
+                    <div class="starterLabelText1">
+                        Caviar osciètre 
+                    </div>
+                    <div class="starterLabelText2">
+                        Sur blini à la farine de blé noir
+                    </div>
+                </div>
+                <div class="starterLabelAside">
+                    35€
+                </div>
+            </div>
+            <div class="starterLabel">
+                <div class="starterLabelText">
+                    <div class="starterLabelText1">
+                        Homard et espuma de potiron
+                    </div>
+                    <div class="starterLabelText2">
+                        Mariné aux zestes d'orange
+                    </div>
+                </div>
+                <div class="starterLabelAside">
+                    20€
+                </div>
+            </div>
+            <div class="starterLabel">
+                <div class="starterLabelText">
+                    <div class="starterLabelText1">
+                        Foie gras de canard cuit entier
+                    </div>
+                    <div class="starterLabelText2">
+                        Confiture de figue et pain toasté
+                    </div>
+                </div>
+                <div class="starterLabelAside">
+                    35€
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainLabelTitle">
+                Plats
+            </div>
+            <div class="mainLabel">
+                <div class="mainLabelText">
+                    <div class="mainLabelText1">
+                        Noix de coquilles Saint-Jacques
+                    </div>
+                    <div class="mainLabelText2">
+                        Sur lit de purée de céleri-rave
+                    </div>
+                    <div class="mainLabelAside">    
+                        40€
+                    </div>
+                </div>
+            </div>
+            <div class="mainLabel">
+                <div class="mainLabelText">
+                    <div class="mainLabelText1">
+                        Langoustine poêlée
+                    </div>
+                    <div class="mainLabelText2">
+                        Purée de patate douce
+                    </div>
+                </div>
+                <div class="mainLabelAside">
+                    35€
+                </div>
+            </div>
+            <div class="mainLabel">
+                <div class="mainLabelText">
+                    <div class="mainLabelText1">
+                        Mijoté de queue de boeuf 
+                    </div>
+                    <div class="mainLabelText2">
+                        Et riz sauvage aux zestes de citron
+                    </div>
+                </div>
+                <div class="mainLabelAside">
+                    44€
+                </div>
+            </div>
+        </div>
+        <div class="desert">
+            <div class="desertLabelTitle">
+                Desserts
+            </div>
+            <div class="desertLabel">
+                <div class="desertLabelText">
+                    <div class="desertLabelText1">
+                        Macaron noisette et chocolat
+                    </div>
+                    <div class="desertLabelText2">
+                        Glace au caramel brun et sel de Guérande
+                    </div>
+                </div>
+                <div class="desertLabelAside">
+                    18€
+                </div>
+            </div>
+            <div class="desertLabel">
+                <div class="desertLabelText">
+                    <div class="desertLabelText1">
+                        Baba au rhum revisité 
+                    </div>
+                    <div class="desertLabelText2">
+                        Avec son coulis de citron
+                    </div>
+                </div>
+                <div class="desertLabelAside">
+                    22€
+                </div>
+            </div>
+            <div class="desertLabel">
+                <div class="desertLabelText">
+                    <div class="desertLabelText1">
+                        Tarte au citron meringuée 
+                    </div>
+                    <div class="desertLabelText2">
+                        Déstructurée
+                    </div>
+                </div>
+                <div class="desertLabelAside">
+                    23€
+                </div>
+            </div>
+        </div>
+        <div class="commander">Commander</div>
+    </section>
+    <footer>
+        <img src="images/ohmyfood@2x.svg" alt="Oh my food" />
 
-
+        <div class="footerLigne">
+            <div class="footerLogo"><i class="fas fa-utensils"></i></div>
+            <div>Proposer un restaurant</div>
+        </div>
+        <div class="footerLigne">
+            <div class="footerLogo"><i class="fas fa-hands-helping"></i></div>
+            <div>Devenir partenaire</div>
+        </div>
+        <div>Mentions légales</div>
+        <div>Contact</div>
+    </footer>
 </body>
 </html>
-

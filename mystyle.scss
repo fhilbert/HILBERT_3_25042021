@@ -90,7 +90,11 @@ header{
     box-shadow: 0 0 16px #0000002e;
 
     &:hover{
-        background-color: $secondary;
+        
+       background-color: lighten($primary,30%);
+       .logo{
+           color:$primary;
+        }
     }
 }
 .number{
@@ -114,7 +118,7 @@ header{
     font-size: 1.2rem;
 }    
 section{
-    background-color: rosybrown; // rgb(246,246,246)
+    background-color: beige; // rgb(246,246,246)
 
 }
 .sectionLabel{

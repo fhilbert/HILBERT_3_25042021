@@ -89,7 +89,10 @@ header {
   box-shadow: 0 0 16px #0000002e;
 }
 .insideFunction:hover {
-  background-color: #FF79DA;
+  background-color: #e4d5f6;
+}
+.insideFunction:hover .logo {
+  color: #9356DC;
 }
 
 .number {
@@ -116,7 +119,7 @@ header {
 }
 
 section {
-  background-color: rosybrown;
+  background-color: beige;
 }
 
 .sectionLabel {

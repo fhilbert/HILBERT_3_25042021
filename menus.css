@@ -16,11 +16,13 @@ header {
 }
 
 .header_logo {
-  width: 30vw;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
 }
 
 #logo {
-  width: 30vw;
+  width: 40vw;
 }
 
 .headerRestaurant {
