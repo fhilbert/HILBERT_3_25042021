@@ -68,27 +68,49 @@ header {
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
 }
-
-.labelMenu {
+.starterLabel .labelMenu,
+.mainLabel .labelMenu,
+.desertLabel .labelMenu {
   padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
 }
-
-.LabelText1,
-.LabelText2 {
+.starterLabel .LabelText1,
+.starterLabel .LabelText2,
+.mainLabel .LabelText1,
+.mainLabel .LabelText2,
+.desertLabel .LabelText1,
+.desertLabel .LabelText2 {
+  width: 80vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.starterLabel .LabelAside,
+.mainLabel .LabelAside,
+.desertLabel .LabelAside {
+  display: flex;
+  align-items: flex-end;
+}
+.starterLabel .check,
+.mainLabel .check,
+.desertLabel .check {
+  display: none;
+}
+.starterLabel:hover .LabelText1,
+.starterLabel:hover .LabelText2,
+.mainLabel:hover .LabelText1,
+.mainLabel:hover .LabelText2,
+.desertLabel:hover .LabelText1,
+.desertLabel:hover .LabelText2 {
   width: 70vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.LabelAside {
-  display: flex;
-  align-items: flex-end;
-}
-
-.check {
+.starterLabel:hover .check,
+.mainLabel:hover .check,
+.desertLabel:hover .check {
   width: 40px;
   display: flex;
   align-items: center;
@@ -97,7 +119,9 @@ header {
   color: #99E2D0;
   background-color: #99E2D0;
 }
-.check i {
+.starterLabel:hover .check i,
+.mainLabel:hover .check i,
+.desertLabel:hover .check i {
   color: #fff;
 }
 
@@ -109,15 +133,6 @@ header {
   text-transform: uppercase;
 }
 
-/*.mainLabel{
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid aqua;
-    background-color:#fff;
-    margin-bottom: 20px;
-    border-radius: 15px 15px 15px 15px;
-    padding:10px 20px 10px 10px;
-}*/
 .LabelAside {
   display: flex;
   align-items: flex-end;
@@ -131,17 +146,6 @@ header {
   text-transform: uppercase;
 }
 
-/*
-.desertLabel{
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid aqua;
-    background-color:#fff;
-    margin-bottom: 20px;
-    border-radius: 15px 15px 15px 15px;
-    padding:10px 20px 10px 10px;
-}
-*/
 .LabelAside {
   display: flex;
   align-items: flex-end;
