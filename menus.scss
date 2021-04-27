@@ -63,6 +63,9 @@ header{
     text-align: center;
     object-fit: cover;
 }
+section{
+    padding: 0vh 3vw 0vh 3vw;
+}
 .starterLabelTitle{
     margin-top: 30px;
     border-bottom: 2px solid $tertiairy;
@@ -85,6 +88,9 @@ header{
        display: flex;
        justify-content: space-between;
    }
+   .LabelText1{
+       font-weight: bolder;
+   }
    .LabelText1,
    .LabelText2{
        width:80vw;
@@ -102,13 +108,13 @@ header{
     &:hover{
         .LabelText1,
         .LabelText2{
-            width:70vw;
+            width:62vw;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }     
         .check{
-           width:40px;
+           width:50px;
            display: flex;
            //display:none;
            align-items: center;
@@ -158,6 +164,7 @@ header{
     background-color: $secondary;
 }
 footer{
+    padding-left: 5vw;
     background-color: rgb(53, 53, 53);
     color: #fff;
     line-height: 2rem;    

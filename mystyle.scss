@@ -21,7 +21,7 @@ header{
     height:5vh;
 }
 #logo{
-   
+    
     width: 40vw;
     
 }
@@ -30,43 +30,50 @@ header{
     padding :20px 0px 10px 0px;
     display:flex;
     flex-direction: row;
-    margin-bottom: 20px;
     justify-content: center;
 }
 .location_logo{
     margin-right: 10px;
-
-
-}
-.title{
-    font-size: 19px;
-    width: 60vw;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    
-}
-.ligne2{
-    font-size: 16px;
-    width: 90vw;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
     
     
 }
-.explore{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0rem 1rem;
-    height:50px;
-    width: 200px;
-    border-radius: 25px;
-    color: #fff;
-    background-color: $secondary;
-    margin: auto;
-    margin-bottom: 20px;
+.headerbottom{
+    background-color: rgb(246,246,246);
+    height:38vh;
+   .title{
+       padding-top: 30px;
+        font-size: 19px;
+        width: 60vw;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ligne2{
+        font-size: 16px;
+        width: 90vw;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;   
+    }
+    .explore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0vh 2vw 0vh 2vw;
+        height:50px;
+        width: 200px;
+        border-radius: 25px;
+        color: #fff;
+        background-color: $secondary;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 0 0 16px #0000002e;
+    }
+}
+h1,
+h2{
+    font-size: 1.4rem;
+    font-weight: bolder;
 }
 .titleFunction{
     margin: 20px;
@@ -91,7 +98,7 @@ header{
 
     &:hover{
         
-       background-color: lighten($primary,30%);
+       background-color: lighten($primary,35%);
        .logo{
            color:$primary;
         }
@@ -101,7 +108,7 @@ header{
     display: flex;
     border: 2px solid $primary;
     border-radius: 100%;
-    margin-left: -0.7rem;;
+    margin-left: -0.7rem;
     margin-right: 20px;
     width: 19px;
     height: 19px;
@@ -119,7 +126,9 @@ header{
 }    
 section{
     background-color: beige; // rgb(246,246,246)
-
+    h2{
+        padding-left: 5vw; 
+    }
 }
 .sectionLabel{
     display: flex;
@@ -142,9 +151,10 @@ section{
     text-align: center;
     object-fit: cover;
 }
+section{
+    padding-top: 40px;
+}
 section .new{
-    //display: flex;
-    //justify-content: center;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -154,25 +164,29 @@ section .new{
     background: #99E2D0;
     color: #16a072;
     padding: 5px 8px 5px 8px;
-
+    
 }
 .subPhoto{
+    padding: 10px 15px 0px 15px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+.heart i{
+    font-size: x-large;
 }
 .labelText{
-    padding-left: 15px;
+    //padding-left: 15px;
     .labelText1{
         font-weight: bold;
     }
 
 }
 footer{
+    padding-left: 5vw;
     background-color: rgb(53, 53, 53);
     color: #fff;
     line-height: 2rem;
-    display:grid;
-    
     img{
         padding-top: 20px;
         width: 28vw;

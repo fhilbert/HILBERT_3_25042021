@@ -50,6 +50,10 @@ header {
      object-fit: cover;
 }
 
+section {
+  padding: 0vh 3vw 0vh 3vw;
+}
+
 .starterLabelTitle {
   margin-top: 30px;
   border-bottom: 2px solid #99E2D0;
@@ -74,6 +78,11 @@ header {
   padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
+}
+.starterLabel .LabelText1,
+.mainLabel .LabelText1,
+.desertLabel .LabelText1 {
+  font-weight: bolder;
 }
 .starterLabel .LabelText1,
 .starterLabel .LabelText2,
@@ -103,7 +112,7 @@ header {
 .mainLabel:hover .LabelText2,
 .desertLabel:hover .LabelText1,
 .desertLabel:hover .LabelText2 {
-  width: 70vw;
+  width: 62vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -111,7 +120,7 @@ header {
 .starterLabel:hover .check,
 .mainLabel:hover .check,
 .desertLabel:hover .check {
-  width: 40px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,6 +173,7 @@ header {
 }
 
 footer {
+  padding-left: 5vw;
   background-color: #353535;
   color: #fff;
   line-height: 2rem;

@@ -27,7 +27,6 @@ header {
   padding: 20px 0px 10px 0px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
   justify-content: center;
 }
 
@@ -35,27 +34,30 @@ header {
   margin-right: 10px;
 }
 
-.title {
+.headerbottom {
+  background-color: #f6f6f6;
+  height: 38vh;
+}
+.headerbottom .title {
+  padding-top: 30px;
   font-size: 19px;
   width: 60vw;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
 }
-
-.ligne2 {
+.headerbottom .ligne2 {
   font-size: 16px;
   width: 90vw;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
 }
-
-.explore {
+.headerbottom .explore {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0rem 1rem;
+  padding: 0vh 2vw 0vh 2vw;
   height: 50px;
   width: 200px;
   border-radius: 25px;
@@ -63,6 +65,13 @@ header {
   background-color: #FF79DA;
   margin: auto;
   margin-bottom: 20px;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+h1,
+h2 {
+  font-size: 1.4rem;
+  font-weight: bolder;
 }
 
 .titleFunction {
@@ -89,7 +98,7 @@ header {
   box-shadow: 0 0 16px #0000002e;
 }
 .insideFunction:hover {
-  background-color: #e4d5f6;
+  background-color: #f2eafb;
 }
 .insideFunction:hover .logo {
   color: #9356DC;
@@ -121,6 +130,9 @@ header {
 section {
   background-color: beige;
 }
+section h2 {
+  padding-left: 5vw;
+}
 
 .sectionLabel {
   display: flex;
@@ -147,6 +159,10 @@ section {
      object-fit: cover;
 }
 
+section {
+  padding-top: 40px;
+}
+
 section .new {
   position: absolute;
   top: 15px;
@@ -160,22 +176,25 @@ section .new {
 }
 
 .subPhoto {
+  padding: 10px 15px 0px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.labelText {
-  padding-left: 15px;
+.heart i {
+  font-size: x-large;
 }
+
 .labelText .labelText1 {
   font-weight: bold;
 }
 
 footer {
+  padding-left: 5vw;
   background-color: #353535;
   color: #fff;
   line-height: 2rem;
-  display: grid;
 }
 footer img {
   padding-top: 20px;
