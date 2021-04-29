@@ -184,6 +184,11 @@ section .new {
 
 .heart i {
   font-size: x-large;
+  color: -webkit-linear-gradient(#FF79DA, #9356DC);
+}
+
+.heart :hover i {
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 .labelText .labelText1 {

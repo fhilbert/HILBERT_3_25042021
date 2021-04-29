@@ -54,13 +54,8 @@ section {
   padding: 0vh 3vw 0vh 3vw;
 }
 
-.heart {
-  transform: rotate(360deg);
-  transition: transform 5s;
-}
 .heart:hover {
-  transform: rotate(-360deg);
-  transition: all 4s;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 .labelTitle {
@@ -113,7 +108,7 @@ section {
 .starterLabel .check,
 .mainLabel .check,
 .desertLabel .check {
-  display: none;
+  color: transparent;
 }
 .starterLabel:hover .labelText1,
 .starterLabel:hover .labelText2,
@@ -139,12 +134,11 @@ section {
   color: #99E2D0;
   background-color: #99E2D0;
 }
-.starterLabel:hover i,
-.mainLabel:hover i,
-.desertLabel:hover i {
-  display: block;
+.starterLabel:hover .check i,
+.mainLabel:hover .check i,
+.desertLabel:hover .check i {
   transition: transform 4s;
-  transform: rotate(1turn);
+  transform: rotate(360deg);
   color: #fff;
 }
 

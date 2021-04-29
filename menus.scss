@@ -67,11 +67,13 @@ section{
     padding: 0vh 3vw 0vh 3vw;
 }
 .heart{
-    transform: rotate(360deg);
-    transition: transform 5s;
+    // transform: rotate(360deg);
+    // transition: transform 5s;
     &:hover{
-        transform: rotate(-360deg);
-        transition: all 4s;
+        background-image: linear-gradient($secondary,$primary);  
+        // transform: rotate(-360deg);
+        //transition: all 4s;
+         
     }
 }
 .labelTitle{
@@ -111,15 +113,13 @@ section{
         align-items: flex-end;
     }
     .check{
-        display:none;
+        color:transparent;
     }
     &:hover{
         .labelText1,
         .labelText2{
-            //transition-property: width;
             transition: all 3s;
             width:67vw;
-            //padding-right: 10w;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -133,12 +133,11 @@ section{
             border-radius: 0px 15px 15px 0px;
             color: $tertiairy;
             background-color: $tertiairy;
-        }
-        i{
-            display:block;
-            transition: transform 4s;
-            transform: rotate(1turn);
-            color: #fff;
+            i{
+                transition: transform 4s;
+                transform: rotate(360deg);
+                color: #fff;
+            }
         }
     }
 }
