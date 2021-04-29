@@ -66,11 +66,19 @@ header{
 section{
     padding: 0vh 3vw 0vh 3vw;
 }
-.starterLabelTitle{
-    margin-top: 30px;
+.heart{
+    transform: rotate(360deg);
+    transition: transform 5s;
+    &:hover{
+        transform: rotate(-360deg);
+        transition: all 4s;
+    }
+}
+.labelTitle{
+    margin-top: 50px;
     border-bottom: 2px solid $tertiairy;
     width:35px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-transform: uppercase;
 }
 .starterLabel,
@@ -88,17 +96,17 @@ section{
        display: flex;
        justify-content: space-between;
    }
-   .LabelText1{
+   .labelText1{
        font-weight: bolder;
    }
-   .LabelText1,
-   .LabelText2{
+   .labelText1,
+   .labelText2{
        width:80vw;
        overflow: hidden;
        white-space: nowrap;
        text-overflow: ellipsis;
     }
-    .LabelAside{
+    .labelAside{
         display: flex;
         align-items: flex-end;
     }
@@ -106,49 +114,35 @@ section{
         display:none;
     }
     &:hover{
-        .LabelText1,
-        .LabelText2{
-            width:62vw;
+        .labelText1,
+        .labelText2{
+            //transition-property: width;
+            transition: all 3s;
+            width:67vw;
+            //padding-right: 10w;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }     
         .check{
-           width:50px;
-           display: flex;
-           //display:none;
-           align-items: center;
-           justify-content: center;
-           border-radius: 0px 15px 15px 0px;
-           color: $tertiairy;
-           background-color: $tertiairy;
-           i{
-               color: #fff;
-            }
+            width:0px;
+            display: flex;
+            width:50px; 
+            align-items: center;
+            justify-content: center;
+            border-radius: 0px 15px 15px 0px;
+            color: $tertiairy;
+            background-color: $tertiairy;
+        }
+        i{
+            display:block;
+            transition: transform 4s;
+            transform: rotate(1turn);
+            color: #fff;
         }
     }
 }
-.mainLabelTitle{
-    margin-top: 30px;
-    border-bottom: 2px solid $tertiairy;
-    width:35px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-}
-.LabelAside{
-    display: flex;
-    align-items: flex-end;
-}
-.desertLabelTitle{
-    margin-top: 30px;
-    border-bottom: 2px solid $tertiairy;
-    width:35px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-
-}
-.LabelAside{
+.labelAside{
     display: flex;
     align-items: flex-end;
 }
@@ -158,10 +152,10 @@ section{
     justify-content: center;
     height:50px;
     width:170px;
-    margin: 30px auto;
+    margin: 50px auto;
     border-radius: 25px;
     color: #fff;
-    background-color: $secondary;
+    background-image: linear-gradient($secondary,$primary);  
 }
 footer{
     padding-left: 5vw;

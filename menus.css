@@ -54,11 +54,20 @@ section {
   padding: 0vh 3vw 0vh 3vw;
 }
 
-.starterLabelTitle {
-  margin-top: 30px;
+.heart {
+  transform: rotate(360deg);
+  transition: transform 5s;
+}
+.heart:hover {
+  transform: rotate(-360deg);
+  transition: all 4s;
+}
+
+.labelTitle {
+  margin-top: 50px;
   border-bottom: 2px solid #99E2D0;
   width: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -79,25 +88,25 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.starterLabel .LabelText1,
-.mainLabel .LabelText1,
-.desertLabel .LabelText1 {
+.starterLabel .labelText1,
+.mainLabel .labelText1,
+.desertLabel .labelText1 {
   font-weight: bolder;
 }
-.starterLabel .LabelText1,
-.starterLabel .LabelText2,
-.mainLabel .LabelText1,
-.mainLabel .LabelText2,
-.desertLabel .LabelText1,
-.desertLabel .LabelText2 {
+.starterLabel .labelText1,
+.starterLabel .labelText2,
+.mainLabel .labelText1,
+.mainLabel .labelText2,
+.desertLabel .labelText1,
+.desertLabel .labelText2 {
   width: 80vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.starterLabel .LabelAside,
-.mainLabel .LabelAside,
-.desertLabel .LabelAside {
+.starterLabel .labelAside,
+.mainLabel .labelAside,
+.desertLabel .labelAside {
   display: flex;
   align-items: flex-end;
 }
@@ -106,13 +115,14 @@ section {
 .desertLabel .check {
   display: none;
 }
-.starterLabel:hover .LabelText1,
-.starterLabel:hover .LabelText2,
-.mainLabel:hover .LabelText1,
-.mainLabel:hover .LabelText2,
-.desertLabel:hover .LabelText1,
-.desertLabel:hover .LabelText2 {
-  width: 62vw;
+.starterLabel:hover .labelText1,
+.starterLabel:hover .labelText2,
+.mainLabel:hover .labelText1,
+.mainLabel:hover .labelText2,
+.desertLabel:hover .labelText1,
+.desertLabel:hover .labelText2 {
+  transition: all 3s;
+  width: 67vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -120,42 +130,25 @@ section {
 .starterLabel:hover .check,
 .mainLabel:hover .check,
 .desertLabel:hover .check {
-  width: 50px;
+  width: 0px;
   display: flex;
+  width: 50px;
   align-items: center;
   justify-content: center;
   border-radius: 0px 15px 15px 0px;
   color: #99E2D0;
   background-color: #99E2D0;
 }
-.starterLabel:hover .check i,
-.mainLabel:hover .check i,
-.desertLabel:hover .check i {
+.starterLabel:hover i,
+.mainLabel:hover i,
+.desertLabel:hover i {
+  display: block;
+  transition: transform 4s;
+  transform: rotate(1turn);
   color: #fff;
 }
 
-.mainLabelTitle {
-  margin-top: 30px;
-  border-bottom: 2px solid #99E2D0;
-  width: 35px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.LabelAside {
-  display: flex;
-  align-items: flex-end;
-}
-
-.desertLabelTitle {
-  margin-top: 30px;
-  border-bottom: 2px solid #99E2D0;
-  width: 35px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.LabelAside {
+.labelAside {
   display: flex;
   align-items: flex-end;
 }
@@ -166,10 +159,10 @@ section {
   justify-content: center;
   height: 50px;
   width: 170px;
-  margin: 30px auto;
+  margin: 50px auto;
   border-radius: 25px;
   color: #fff;
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {

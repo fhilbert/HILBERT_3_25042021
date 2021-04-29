@@ -64,7 +64,7 @@ header{
         width: 200px;
         border-radius: 25px;
         color: #fff;
-        background-color: $secondary;
+        background-image: linear-gradient($secondary,$primary);  
         margin: auto;
         margin-bottom: 20px;
         box-shadow: 0 0 16px #0000002e;

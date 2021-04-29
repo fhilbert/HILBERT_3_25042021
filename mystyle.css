@@ -62,7 +62,7 @@ header {
   width: 200px;
   border-radius: 25px;
   color: #fff;
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   margin: auto;
   margin-bottom: 20px;
   box-shadow: 0 0 16px #0000002e;
