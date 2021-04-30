@@ -1,9 +1,16 @@
 $primary:#9356DC;
 $secondary:#FF79DA;
 $tertiairy:#99E2D0;
-
-
-
+@keyframes glissement {
+    0%{
+        top:20px;
+        opacity:0;
+    }
+    100%{
+        top:0px;
+        opacity:1;
+    }   
+}
 body{
     margin:0;
     background-color: beige; //rgb(246,246,246);
@@ -23,6 +30,7 @@ header{
 #arrow{
     width: 20px;
     height: 20px;
+    color: black;
     font-size: large;
     position: absolute;
     top:20px;
@@ -55,9 +63,8 @@ section{
 }
 .heart{
     &:hover{
-        background-image: linear-gradient($secondary,$primary);  
-        // transform: rotate(-360deg);
-        //transition: all 4s;
+        color:$secondary;
+        //background-image: linear-gradient($secondary,$primary);  
          
     }
 }
@@ -78,6 +85,11 @@ section{
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
    // padding:10px 20px 10px 10px;
+    position: relative;
+    animation: glissement;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
    .labelMenu{
        padding:10px 10px 10px 10px;
        display: flex;
@@ -103,7 +115,7 @@ section{
     &:hover{
         .labelText1,
         .labelText2{
-            transition: all 3s;
+            transition: all 4s;
             width:67vw;
             overflow: hidden;
             white-space: nowrap;

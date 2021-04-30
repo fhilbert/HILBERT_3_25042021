@@ -1,3 +1,23 @@
+@-webkit-keyframes glissement {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes glissement {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   background-color: beige;
@@ -21,6 +41,7 @@ header {
 #arrow {
   width: 20px;
   height: 20px;
+  color: black;
   font-size: large;
   position: absolute;
   top: 20px;
@@ -57,7 +78,7 @@ section {
 }
 
 .heart:hover {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: #FF79DA;
 }
 
 .labelTitle {
@@ -77,6 +98,13 @@ section {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
+  position: relative;
+  -webkit-animation: glissement;
+          animation: glissement;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .starterLabel .labelMenu,
 .mainLabel .labelMenu,
@@ -118,7 +146,7 @@ section {
 .mainLabel:hover .labelText2,
 .desertLabel:hover .labelText1,
 .desertLabel:hover .labelText2 {
-  transition: all 3s;
+  transition: all 4s;
   width: 67vw;
   overflow: hidden;
   white-space: nowrap;
