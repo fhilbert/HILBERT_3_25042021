@@ -21,9 +21,7 @@ header{
     height:5vh;
 }
 #logo{
-    
     width: 40vw;
-    
 }
 .location{
     background-color: rgb(234,234,234);
@@ -41,15 +39,17 @@ header{
     background-color: rgb(246,246,246);
     height:38vh;
    .title{
-       padding-top: 30px;
-        font-size: 19px;
-        width: 60vw;
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 900;
+        width: 63vw;
         text-align: center;
         margin: auto;
         margin-bottom: 20px;
     }
     .ligne2{
-        font-size: 16px;
+        font-size: 1.15rem;
+        font-weight:lighter;
         width: 90vw;
         text-align: center;
         margin: auto;
@@ -70,7 +70,6 @@ header{
         box-shadow: 0 0 16px #0000002e;
     }
 }
-h1,
 h2{
     font-size: 1.4rem;
     font-weight: bolder;
@@ -119,10 +118,11 @@ h2{
     }
 .logo{
     color:grey;
+    font-size:1.2rem;
 }    
 .textFunction{
     padding-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }    
 section{
     background-color: beige; // rgb(246,246,246)
@@ -173,9 +173,8 @@ section .new{
     align-items: center;
 }
 .heart i{
-    font-size: x-large;
-    color: -webkit-linear-gradient($secondary,$primary);  
-    // color:red;
+    font-size: x-large;  
+     color:red;
 
 }
 .heart{
@@ -187,7 +186,6 @@ section .new{
     }
 }
 .labelText{
-    //padding-left: 15px;
     .labelText1{
         font-weight: bold;
     }

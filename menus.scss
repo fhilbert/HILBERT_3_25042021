@@ -12,34 +12,20 @@ body{
 header{
     width:100%;
 }
-.headerTitle{
+.header_logo{
+    text-align: center;
     padding :20px 0px 10px 0px;
     height:5vh;
-    display:flex;
-  //  flex-direction: column;
-    justify-content: center;
-
-}
-.header_logo{
-  //  padding :20px 0px 10px 0px;
-  //  height:5vh;
-  width:40vw;
-  display:flex;
-  //  flex-direction: column;
-    justify-content: center;
-
 }
 #logo{
     width: 40vw;
- //   display: flex;
- //   justify-content: center;
 }
 #arrow{
-    // display: absolute;
-    // top:20px;
-    // left:20px;
-    // justify-content: flex-start;
-
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:20px;
+    left:30px;
 }
 .headerRestaurant{
     display: flex;
@@ -67,8 +53,6 @@ section{
     padding: 0vh 3vw 0vh 3vw;
 }
 .heart{
-    // transform: rotate(360deg);
-    // transition: transform 5s;
     &:hover{
         background-image: linear-gradient($secondary,$primary);  
         // transform: rotate(-360deg);
@@ -103,7 +87,7 @@ section{
    }
    .labelText1,
    .labelText2{
-       width:80vw;
+       width:75vw;
        overflow: hidden;
        white-space: nowrap;
        text-overflow: ellipsis;

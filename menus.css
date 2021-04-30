@@ -8,21 +8,22 @@ header {
   width: 100%;
 }
 
-.headerTitle {
+.header_logo {
+  text-align: center;
   padding: 20px 0px 10px 0px;
   height: 5vh;
-  display: flex;
-  justify-content: center;
-}
-
-.header_logo {
-  width: 40vw;
-  display: flex;
-  justify-content: center;
 }
 
 #logo {
   width: 40vw;
+}
+
+#arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
 }
 
 .headerRestaurant {
@@ -94,7 +95,7 @@ section {
 .mainLabel .labelText2,
 .desertLabel .labelText1,
 .desertLabel .labelText2 {
-  width: 80vw;
+  width: 75vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

@@ -40,14 +40,16 @@ header {
 }
 .headerbottom .title {
   padding-top: 30px;
-  font-size: 19px;
-  width: 60vw;
+  font-size: 1.4rem;
+  font-weight: 900;
+  width: 63vw;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
 }
 .headerbottom .ligne2 {
-  font-size: 16px;
+  font-size: 1.15rem;
+  font-weight: lighter;
   width: 90vw;
   text-align: center;
   margin: auto;
@@ -68,7 +70,6 @@ header {
   box-shadow: 0 0 16px #0000002e;
 }
 
-h1,
 h2 {
   font-size: 1.4rem;
   font-weight: bolder;
@@ -120,11 +121,12 @@ h2 {
 
 .logo {
   color: grey;
+  font-size: 1.2rem;
 }
 
 .textFunction {
   padding-left: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 section {
@@ -184,7 +186,7 @@ section .new {
 
 .heart i {
   font-size: x-large;
-  color: -webkit-linear-gradient(#FF79DA, #9356DC);
+  color: red;
 }
 
 .heart :hover i {
