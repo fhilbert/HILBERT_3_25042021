@@ -89,6 +89,21 @@ section {
   text-transform: uppercase;
 }
 
+.starterLabel {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.mainLabel {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.desertLabel {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 .starterLabel,
 .mainLabel,
 .desertLabel {
@@ -170,6 +185,24 @@ section {
   transition: transform 4s;
   transform: rotate(360deg);
   color: #fff;
+}
+
+.starterLabel {
+  opacity: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.mainLabel {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.desertLabel {
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .labelAside {

@@ -75,6 +75,16 @@ section{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
+.starterLabel{
+    animation-delay: 0s;
+}
+
+.mainLabel{
+    animation-delay: 1s;
+}
+.desertLabel{
+    animation-delay: 2s;
+}
 .starterLabel,
 .mainLabel,
 .desertLabel{
@@ -138,6 +148,20 @@ section{
         }
     }
 }
+.starterLabel{
+    opacity: 0;
+    animation-delay: 0s;
+}
+
+.mainLabel{
+    opacity: 0;
+    animation-delay: 1s;
+}
+.desertLabel{
+    opacity: 0;
+    animation-delay: 2s;
+}
+
 .labelAside{
     display: flex;
     align-items: flex-end;

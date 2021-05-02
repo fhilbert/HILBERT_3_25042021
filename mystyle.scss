@@ -19,8 +19,12 @@ $tertiairy:#99E2D0;
     0% { transform: rotate(0deg); }
     25%{width: 20vw;}
     50%{width: 30vw;}
-    75%{width: 40vw;}
-    100% { transform: rotate(1040deg); }
+    75%{
+        width: 40vw;
+        transform: rotate(720deg);
+    
+    }
+    100% { width:45vw }
   }
 
 .loading_spinner { 
@@ -33,11 +37,11 @@ $tertiairy:#99E2D0;
     z-index: 5;
     background-image: linear-gradient($secondary,$primary);  
     opacity: .9;
-    animation: disappear 3000ms 2s ease-in-out forwards; 
+    animation: disappear 5000ms 0s ease-in-out forwards; 
     .loading-logo {
         width: 5vw;
         color: $tertiairy;
-        animation: spin 3000ms  ease-in-out;
+        animation: spin 3000ms  ease-in-out forwards;
         animation-iteration-count: 1;  
     }
 }

@@ -36,9 +36,10 @@
   }
   75% {
     width: 40vw;
+    transform: rotate(720deg);
   }
   100% {
-    transform: rotate(1040deg);
+    width: 45vw;
   }
 }
 @keyframes spin {
@@ -53,9 +54,10 @@
   }
   75% {
     width: 40vw;
+    transform: rotate(720deg);
   }
   100% {
-    transform: rotate(1040deg);
+    width: 45vw;
   }
 }
 .loading_spinner {
@@ -68,14 +70,14 @@
   z-index: 5;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.9;
-  -webkit-animation: disappear 3000ms 2s ease-in-out forwards;
-          animation: disappear 3000ms 2s ease-in-out forwards;
+  -webkit-animation: disappear 5000ms 0s ease-in-out forwards;
+          animation: disappear 5000ms 0s ease-in-out forwards;
 }
 .loading_spinner .loading-logo {
   width: 5vw;
   color: #99E2D0;
-  -webkit-animation: spin 3000ms ease-in-out;
-          animation: spin 3000ms ease-in-out;
+  -webkit-animation: spin 3000ms ease-in-out forwards;
+          animation: spin 3000ms ease-in-out forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
