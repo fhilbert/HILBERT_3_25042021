@@ -71,7 +71,7 @@ section{
     .check{
         color:transparent;
     }
-    &:hover{
+    &:active{
         .labelText1,
         .labelText2{
             transition: all 1s;

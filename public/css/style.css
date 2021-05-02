@@ -191,21 +191,21 @@ section {
 .desertLabel .check {
   color: transparent;
 }
-.starterLabel:hover .labelText1,
-.starterLabel:hover .labelText2,
-.mainLabel:hover .labelText1,
-.mainLabel:hover .labelText2,
-.desertLabel:hover .labelText1,
-.desertLabel:hover .labelText2 {
+.starterLabel:active .labelText1,
+.starterLabel:active .labelText2,
+.mainLabel:active .labelText1,
+.mainLabel:active .labelText2,
+.desertLabel:active .labelText1,
+.desertLabel:active .labelText2 {
   transition: all 1s;
   width: 67vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.starterLabel:hover .check,
-.mainLabel:hover .check,
-.desertLabel:hover .check {
+.starterLabel:active .check,
+.mainLabel:active .check,
+.desertLabel:active .check {
   width: 0px;
   display: flex;
   width: 50px;
@@ -215,9 +215,9 @@ section {
   color: #99E2D0;
   background-color: #99E2D0;
 }
-.starterLabel:hover .check i,
-.mainLabel:hover .check i,
-.desertLabel:hover .check i {
+.starterLabel:active .check i,
+.mainLabel:active .check i,
+.desertLabel:active .check i {
   transition: transform 1s;
   transform: rotate(360deg);
   color: #fff;
