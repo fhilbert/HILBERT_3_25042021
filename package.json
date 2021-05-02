@@ -1,0 +1,19 @@
+{
+  "name": "hilbert_3_25042021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhilbert/HILBERT_3_25042021.git"
+  },
+  "author": "hilbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fhilbert/HILBERT_3_25042021/issues"
+  },
+  "homepage": "https://github.com/fhilbert/HILBERT_3_25042021#readme"
+}

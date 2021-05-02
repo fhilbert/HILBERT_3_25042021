@@ -1,31 +1,20 @@
-$primary:#9356DC;
-$secondary:#FF79DA;
-$tertiairy:#99E2D0;
-
-@keyframes disappear {
-    0%{
-        opacity: 0.9 ;
-        z-index:5;   
-    }
-    50%{
-    opacity: 0.7;
-    }
-    100%{
-        opacity: 0;
-        z-index:-9;
-    }   
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    25%{width: 20vw;}
-    50%{width: 30vw;}
-    75%{
-        width: 40vw;
-        transform: rotate(720deg);
-    
-    }
-    100% { width:45vw }
-  }
+@import "./utils/variables";
+// @import "./utils/functions";
+// @import "./utils/mixins";
+@import "./utils/keyframes";
+// @import "./utils/extensions";
+// @import "./base/base";
+// @import "./base/typography";
+// @import "./components/buttons";
+@import "./layout/header";
+// @import "./layout/nav";
+// @import "./layout/container";
+@import "./layout/footer";
+@import "./layout/menus";
+// @import "./layout/form";
+// @import "./pages/work";
+// @import "./pages/about";
+// @import "./pages/project";
 
 .loading_spinner { 
     width: 100%;
@@ -50,22 +39,9 @@ body{
     margin:0px;
     font-family: Roboto, sans-serif;
 }
-
 a{
 	color:black;
 	text-decoration: none;
-}
-
-header{
-    width:100%;
-}
-.header_logo{
-    text-align: center;
-    padding :20px 0px 10px 0px;
-    height:5vh;
-}
-#logo{
-    width: 150px;
 }
 .location{
     background-color: rgb(234,234,234);
@@ -205,8 +181,7 @@ section .new{
     font-weight: bold;
     background: #99E2D0;
     color: #16a072;
-    padding: 5px 8px 5px 8px;
-    
+    padding: 5px 8px 5px 8px; 
 }
 .subPhoto{
     padding: 10px 15px 0px 15px;
@@ -217,12 +192,10 @@ section .new{
 .heart i{
     font-size: x-large;  
      color:red;
-
 }
 .heart{
     :hover{
         i{
-
             background-image: linear-gradient($secondary,$primary);  
         }
     }
@@ -231,24 +204,4 @@ section .new{
     .labelText1{
         font-weight: bold;
     }
-
-}
-footer{
-    padding-left: 5vw;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    line-height: 2rem;
-    img{
-        padding-top: 20px;
-        width: 28vw;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
-    }
-}
-.footerLogo{
-    width:5vw;
-    margin-right: 0.7rem;
-}
-.footerLigne{
-    display: flex;
-    flex-direction: row;
 }

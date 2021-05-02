@@ -1,0 +1,35 @@
+header{
+    width:100%;
+}
+.header_logo{
+    text-align: center;
+    padding :20px 0px 10px 0px;
+    height:5vh;
+}
+#logo{
+    width: 150px; // 150
+}
+#arrow{
+    width: 20px;
+    height: 20px;
+    color:red;
+    font-size: large;
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+.headerRestaurant{
+    display: flex;
+    flex-direction: column;
+}
+.headerRestaurantTitle{
+    display:flex;
+    z-index: 9;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    font-family: Shrikhand, sans-serif;
+    background-color:beige; //rgb(246,246,246);
+    margin-top: -30px;
+    padding : 30px 20px 0px 20px;
+    border-radius: 40px 40px 0px 0px;
+}

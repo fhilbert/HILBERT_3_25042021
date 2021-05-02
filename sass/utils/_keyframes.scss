@@ -1,0 +1,34 @@
+@keyframes disappear {
+    0%{
+        opacity: 0.9 ;
+        z-index:5;   
+    }
+    50%{
+    opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+        z-index:-9;
+    }   
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    25%{width: 20vw;}
+    50%{width: 30vw;}
+    75%{
+        width: 40vw;
+        transform: rotate(720deg);
+    
+    }
+    100% { width:45vw }
+}
+@keyframes glissement {
+    0%{
+        top:20px;
+        opacity:0;
+    }
+    100%{
+        top:0px;
+        opacity:1;
+    }
+}    
