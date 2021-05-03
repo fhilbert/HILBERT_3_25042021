@@ -75,7 +75,7 @@ header {
 #arrow {
   width: 20px;
   height: 20px;
-  color: red;
+  color: black;
   font-size: large;
   position: absolute;
   top: 20px;
@@ -150,6 +150,7 @@ header {
 body {
   margin: 0px;
   font-family: Roboto, sans-serif;
+  background-color: beige;
 }
 
 a {
