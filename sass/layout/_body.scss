@@ -30,9 +30,10 @@ h2{
     background-color:rgb(246,246,246);
     border: 1px solid green;
     align-items: center;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: $shadow;
     &:hover{
        background-color: lighten($primary,35%);
+       box-shadow: $hovershadow;
        .logo{
            color:$primary;
         }
@@ -46,7 +47,7 @@ h2{
     margin-right: 20px;
     width: 19px;
     height: 19px;
-    color: #fff;
+    color: white;
     background-color: $primary;
     align-items: center;
     justify-content: center;
@@ -69,15 +70,25 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 600px){
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
 }
 .insideLabel{
     position: relative;
     width: 90vw; // 340 x 250
     height: 250px;
 	border-radius: 15px;
-	background-color: #fff;
+	background-color: white;
     box-shadow: 0 0 16px #0000002e;
     margin-bottom: 10px;
+    @media screen and (min-width: 600px){
+        width: 40vw;
+        margin: 3vw;
+     }
+ 
 }
 .photo{
     width:100%;
@@ -102,10 +113,6 @@ section .new{
 }
 .subPhoto{
     padding: 10px 15px 0px 15px;
- //   display:flex;
-//    justify-content: space-between;
- //   align-items: center;
-  //  position: relative;
 }
 .heart1{
     @include heart;

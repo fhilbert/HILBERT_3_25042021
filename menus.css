@@ -110,7 +110,7 @@ section {
   display: flex;
   justify-content: space-between;
   border: 2px solid aqua;
-  background-color: #fff;
+  background-color: white;
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
   position: relative;
@@ -184,7 +184,7 @@ section {
 .desertLabel:hover .check i {
   transition: transform 4s;
   transform: rotate(360deg);
-  color: #fff;
+  color: white;
 }
 
 .starterLabel {
@@ -218,14 +218,14 @@ section {
   width: 170px;
   margin: 50px auto;
   border-radius: 25px;
-  color: #fff;
+  color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {
   padding-left: 5vw;
   background-color: #353535;
-  color: #fff;
+  color: white;
   line-height: 2rem;
 }
 footer img {

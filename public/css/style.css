@@ -68,7 +68,7 @@ header {
   height: 5vh;
 }
 
-#logo {
+.logo {
   width: 150px;
 }
 
@@ -123,11 +123,15 @@ header {
   height: 50px;
   width: 200px;
   border-radius: 25px;
-  color: #fff;
+  color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
   margin: auto;
   margin-bottom: 20px;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 3px 3px 10px 1px #d4d4d4;
+}
+.headerbottom .explore:hover {
+  box-shadow: 10px 10px 10px 1px #d4d4d4;
+  background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 .headerRestaurant {
@@ -145,6 +149,10 @@ header {
   padding: 30px 20px 0px 20px;
   border-radius: 40px 40px 0px 0px;
   position: relative;
+}
+
+.headerRestaurantText {
+  padding: 0vw 2vw;
 }
 
 .heart-fill {
@@ -221,10 +229,11 @@ h2 {
   background-color: #f6f6f6;
   border: 1px solid green;
   align-items: center;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 3px 3px 10px 1px #d4d4d4;
 }
 .insideFunction:hover {
   background-color: #f2eafb;
+  box-shadow: 10px 10px 10px 1px #d4d4d4;
 }
 .insideFunction:hover .logo {
   color: #9356DC;
@@ -238,7 +247,7 @@ h2 {
   margin-right: 20px;
   width: 19px;
   height: 19px;
-  color: #fff;
+  color: white;
   background-color: #9356DC;
   align-items: center;
   justify-content: center;
@@ -266,15 +275,28 @@ section h2 {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 600px) {
+  .sectionLabel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .insideLabel {
   position: relative;
   width: 90vw;
   height: 250px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 0 16px #0000002e;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  .insideLabel {
+    width: 40vw;
+    margin: 3vw;
+  }
 }
 
 .photo {
@@ -390,7 +412,7 @@ section {
   display: flex;
   justify-content: space-between;
   border: 2px solid aqua;
-  background-color: #fff;
+  background-color: white;
   margin-bottom: 20px;
   border-radius: 15px 15px 15px 15px;
   position: relative;
@@ -460,7 +482,7 @@ section {
 .desertLabel:hover .check i {
   transition: transform 1s;
   transform: rotate(360deg);
-  color: #fff;
+  color: white;
 }
 
 .starterLabel {
@@ -491,19 +513,24 @@ section {
   width: 170px;
   margin: 50px auto;
   border-radius: 25px;
-  color: #fff;
+  color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 3px 3px 10px 1px #d4d4d4;
+}
+.commander:hover {
+  box-shadow: 10px 10px 10px 1px #d4d4d4;
+  background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 footer {
   padding-left: 5vw;
   background-color: #353535;
-  color: #fff;
+  color: white;
   line-height: 2rem;
 }
 footer img {
   padding-top: 20px;
-  width: 28vw;
+  width: 150;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
 }
 
@@ -515,6 +542,10 @@ footer img {
 .footerLigne {
   display: flex;
   flex-direction: row;
+}
+
+.contact {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

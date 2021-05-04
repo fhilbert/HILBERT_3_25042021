@@ -6,7 +6,7 @@ header{
     padding :20px 0px 10px 0px;
     height:5vh;
 }
-#logo{
+.logo{
     width: 150px; // 150
 }
 #arrow{
@@ -57,14 +57,19 @@ header{
         height:50px;
         width: 200px;
         border-radius: 25px;
-        color: #fff;
+        color: white;
         background-image: linear-gradient($secondary,$primary);  
         margin: auto;
         margin-bottom: 20px;
-        box-shadow: 0 0 16px #0000002e;
+        box-shadow: $shadow;
+        &:hover{
+            box-shadow: $hovershadow;
+            background-image: linear-gradient(lighten($secondary,5%),lighten($primary,5%)); 
+        }
+        
     }
 }
-//------------------------------------------
+//-------- menus restaurants -----------------
 .headerRestaurant{
     display: flex;
     flex-direction: column;
@@ -79,6 +84,9 @@ header{
     padding : 30px 20px 0px 20px;
     border-radius: 40px 40px 0px 0px;
     position:relative;
+}
+.headerRestaurantText{
+    padding: 0vw 2vw;
 }
 .heart-fill{
     background-image: linear-gradient($secondary,$primary); 
