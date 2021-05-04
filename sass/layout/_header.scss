@@ -63,6 +63,7 @@ header{
         margin-bottom: 20px;
         box-shadow: $shadow;
         &:hover{
+            cursor: pointer;
             box-shadow: $hovershadow;
             background-image: linear-gradient(lighten($secondary,5%),lighten($primary,5%)); 
         }
@@ -79,7 +80,7 @@ header{
     justify-content: space-around;
     font-size: 1.8rem;
     font-family: Shrikhand, sans-serif;
-    background-color:beige; //rgb(246,246,246);
+    background-color:rgb(246,246,246);
     margin-top: -30px;
     padding : 30px 20px 0px 20px;
     border-radius: 40px 40px 0px 0px;

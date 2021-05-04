@@ -8,6 +8,14 @@ footer{
         width: 150;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
     }
+    @media screen and (min-width: 600px){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    
+     }
+ 
 }
 .footerLogo{
     width:5vw;

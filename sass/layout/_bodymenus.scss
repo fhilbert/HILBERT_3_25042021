@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: beige; //rgb(246,246,246);
+    background-color: rgb(246,246,246);
     font-family: Roboto, sans-serif;
 }
 .photoMenu{
@@ -33,10 +33,11 @@ section{
 .desertLabel{
     display: flex;
     justify-content: space-between;
-    border: 2px solid aqua;
+    //border: 2px solid aqua;
     background-color:white;
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
+    box-shadow: $shadow;
    // padding:10px 20px 10px 10px;
     position: relative;
     animation: slide;
@@ -68,6 +69,7 @@ section{
     &:hover{
         .labelText1,
         .labelText2{
+            cursor: pointer;
             transition: all 1s;
             width:67vw;
             overflow: hidden;
@@ -119,6 +121,7 @@ section{
     background-image: linear-gradient($secondary,$primary);  
     box-shadow: $shadow;
     &:hover{
+        cursor: pointer;
         box-shadow: $hovershadow;
         background-image: linear-gradient(lighten($secondary,5%),lighten($primary,5%)); 
     }

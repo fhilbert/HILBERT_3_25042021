@@ -1,7 +1,7 @@
 body{
     margin:0px;
     font-family: Roboto, sans-serif;
-    background-color: beige; //rgb(246,246,246);
+    background-color: rgb(246,246,246);
 }
 a{
 	color:black;
@@ -28,14 +28,15 @@ h2{
     border-radius: 25px 15px 15px 25px;
     margin-bottom: 20px;
     background-color:rgb(246,246,246);
-    border: 1px solid green;
+    //border: 1px solid green;
     align-items: center;
     box-shadow: $shadow;
     &:hover{
-       background-color: lighten($primary,35%);
-       box-shadow: $hovershadow;
-       .logo{
-           color:$primary;
+        cursor: pointer;
+        background-color: lighten($primary,35%);
+        box-shadow: $hovershadow;
+        .logoFunction{
+            color:$primary;
         }
     }
 }
@@ -61,7 +62,7 @@ h2{
     font-size: 1rem;
 }    
 section{
-    background-color: beige; // rgb(246,246,246)
+    background-color: rgb(246,246,246);
     h2{
         padding-left: 5vw; 
     }

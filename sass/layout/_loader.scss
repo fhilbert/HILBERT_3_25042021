@@ -8,7 +8,7 @@
     z-index: 5;
     background-image: linear-gradient($secondary,$primary);  
     opacity: .9;
-    animation: disappear 5000ms 0s ease-in-out forwards; 
+    animation: disappear 3000ms 1s ease-in-out forwards; 
     .loading-logo {
         width: 5vw;
         color: $tertiairy;
