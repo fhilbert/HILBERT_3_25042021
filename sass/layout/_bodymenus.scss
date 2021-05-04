@@ -12,12 +12,6 @@ body{
 section{
     padding: 0vh 3vw 0vh 3vw;
 }
-.heart{
-    &:hover{
-        color:$secondary;
-        //background-image: linear-gradient($secondary,$primary);     
-    }
-}
 .labelTitle{
     margin-top: 50px;
     border-bottom: 2px solid $tertiairy;
@@ -71,7 +65,7 @@ section{
     .check{
         color:transparent;
     }
-    &:active{
+    &:hover{
         .labelText1,
         .labelText2{
             transition: all 1s;
@@ -81,9 +75,9 @@ section{
             text-overflow: ellipsis;
         }     
         .check{
-            width:0px;
+            //width:0px;
             display: flex;
-            width:50px; 
+            width:15vw; 
             align-items: center;
             justify-content: center;
             border-radius: 0px 15px 15px 0px;

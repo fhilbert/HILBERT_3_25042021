@@ -102,20 +102,39 @@ section .new{
 }
 .subPhoto{
     padding: 10px 15px 0px 15px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+ //   display:flex;
+//    justify-content: space-between;
+ //   align-items: center;
+  //  position: relative;
 }
-.heart i{
-    font-size: x-large;  
-     color:red;
-}
-.heart{
+.heart1{
+    @include heart;
+    opacity:1; 
+    font-size: 24px;  
+    bottom: 25px;
+    right: 20px;
+    cursor: pointer;
+}    
+.heart2{
+    @include heart;
+    cursor: pointer;
+    opacity:0;
+    font-size: 25px;  
+    bottom: 25px;
+    right: 20px;
     :hover{
-        i{
-            background-image: linear-gradient($secondary,$primary);  
-        }
+        opacity:1;
+        transition: opacity 2s;
+        &::after{
+            content:"";
+            opacity:1;
+        }   
     }
+}
+.heart-fill{
+    background-image: linear-gradient($secondary,$primary); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color :transparent;
 }
 .labelText{
     .labelText1{
