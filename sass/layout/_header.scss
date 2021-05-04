@@ -70,7 +70,6 @@ header{
     flex-direction: column;
 }
 .headerRestaurantTitle{
-    display:flex;
     z-index: 9;
     justify-content: space-around;
     font-size: 1.8rem;
@@ -79,4 +78,37 @@ header{
     margin-top: -30px;
     padding : 30px 20px 0px 20px;
     border-radius: 40px 40px 0px 0px;
+    position:relative;
 }
+.heart-fill{
+    background-image: linear-gradient($secondary,$primary); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color :transparent;
+}
+.menus-heart1{
+    @include heart;
+    opacity:1; 
+    font-size: 24px;  
+    top: 35px;
+    right: 8%;
+    cursor: pointer;
+}
+.menus-heart2{
+    @include heart;
+    cursor: pointer;
+    //opacity:0;
+    font-size: 25px;  
+    top: 35px;
+    right: 8%;
+    &:hover{
+        opacity:1;
+        transition: opacity 5s;
+        &::after{
+            content:"";
+            opacity:1;
+        }   
+    }
+}
+
+
+

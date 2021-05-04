@@ -180,7 +180,6 @@ header {
 }
 
 .headerRestaurantTitle {
-  display: flex;
   z-index: 9;
   justify-content: space-around;
   font-size: 1.8rem;
@@ -189,6 +188,44 @@ header {
   margin-top: -30px;
   padding: 30px 20px 0px 20px;
   border-radius: 40px 40px 0px 0px;
+  position: relative;
+}
+
+.heart-fill {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus-heart1 {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+  top: 35px;
+  right: 8%;
+  cursor: pointer;
+}
+
+.menus-heart2 {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transform-origin: bottom;
+  cursor: pointer;
+  font-size: 25px;
+  top: 35px;
+  right: 8%;
+}
+.menus-heart2:hover {
+  opacity: 1;
+  transition: opacity 5s;
+}
+.menus-heart2:hover::after {
+  content: "";
+  opacity: 1;
 }
 
 body {
@@ -311,18 +348,38 @@ section .new {
 
 .subPhoto {
   padding: 10px 15px 0px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.heart i {
-  font-size: x-large;
-  color: red;
+.heart1 {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+  bottom: 25px;
+  right: 20px;
+  cursor: pointer;
 }
 
-.heart :hover i {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+.heart2 {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transform-origin: bottom;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 25px;
+  bottom: 25px;
+  right: 20px;
+}
+.heart2:hover {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.heart2:hover::after {
+  content: "";
+  opacity: 1;
 }
 
 .labelText .labelText1 {
@@ -345,10 +402,6 @@ body {
 
 section {
   padding: 0vh 3vw 0vh 3vw;
-}
-
-.heart:hover {
-  color: #FF79DA;
 }
 
 .labelTitle {
@@ -425,33 +478,32 @@ section {
 .desertLabel .check {
   color: transparent;
 }
-.starterLabel:active .labelText1,
-.starterLabel:active .labelText2,
-.mainLabel:active .labelText1,
-.mainLabel:active .labelText2,
-.desertLabel:active .labelText1,
-.desertLabel:active .labelText2 {
+.starterLabel:hover .labelText1,
+.starterLabel:hover .labelText2,
+.mainLabel:hover .labelText1,
+.mainLabel:hover .labelText2,
+.desertLabel:hover .labelText1,
+.desertLabel:hover .labelText2 {
   transition: all 1s;
   width: 67vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.starterLabel:active .check,
-.mainLabel:active .check,
-.desertLabel:active .check {
-  width: 0px;
+.starterLabel:hover .check,
+.mainLabel:hover .check,
+.desertLabel:hover .check {
   display: flex;
-  width: 50px;
+  width: 15vw;
   align-items: center;
   justify-content: center;
   border-radius: 0px 15px 15px 0px;
   color: #99E2D0;
   background-color: #99E2D0;
 }
-.starterLabel:active .check i,
-.mainLabel:active .check i,
-.desertLabel:active .check i {
+.starterLabel:hover .check i,
+.mainLabel:hover .check i,
+.desertLabel:hover .check i {
   transition: transform 1s;
   transform: rotate(360deg);
   color: #fff;
