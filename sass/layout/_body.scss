@@ -131,6 +131,11 @@ section .new{
         }   
     }
 }
+.heart-fill{
+    background-image: linear-gradient($secondary,$primary); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color :transparent;
+}
 .labelText{
     .labelText1{
         font-weight: bold;
