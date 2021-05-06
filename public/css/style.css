@@ -36,6 +36,11 @@
     opacity: 1;
   }
 }
+body {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
 .loading_spinner {
   width: 100%;
   height: 100%;
@@ -85,6 +90,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  box-shadow: 3px 3px 10px 1px #d4d4d4 inset;
 }
 
 .location_logo {
@@ -93,11 +99,11 @@ header {
 
 .headerbottom {
   background-color: #f6f6f6;
-  height: 38vh;
+  height: 40vh;
 }
 .headerbottom .title {
   padding-top: 30px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 900;
   width: 63vw;
   text-align: center;
@@ -116,14 +122,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0vh 2vw 0vh 2vw;
+  padding: 0.5vh 2vw 0.5vh 2vw;
   height: 50px;
   width: 200px;
-  border-radius: 25px;
+  border-radius: 50px;
   color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   box-shadow: 3px 3px 10px 1px #d4d4d4;
 }
 .headerbottom .explore:hover {
@@ -132,6 +138,11 @@ header {
   background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
+@media screen and (min-width: 600px) {
+  main {
+    padding: 0vw 20vw;
+  }
+}
 .headerRestaurant {
   display: flex;
   flex-direction: column;
@@ -183,17 +194,11 @@ header {
 }
 .menus-heart2:hover {
   opacity: 1;
-  transition: opacity 5s;
+  transition: opacity 2s;
 }
 .menus-heart2:hover::after {
   content: "";
   opacity: 1;
-}
-
-body {
-  margin: 0px;
-  font-family: Roboto, sans-serif;
-  background-color: #f6f6f6;
 }
 
 a {
@@ -202,12 +207,14 @@ a {
 }
 
 h2 {
-  font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.7rem;
   font-weight: bolder;
+  padding: 10vw 0vw 5vw 5vw;
 }
 
-.titleFunction {
-  margin: 20px;
+main {
+  background-color: white;
 }
 
 .function {
@@ -223,7 +230,7 @@ h2 {
   height: 70px;
   width: 90%;
   border-radius: 25px 15px 15px 25px;
-  margin-bottom: 20px;
+  margin-bottom: 3vh;
   background-color: #f6f6f6;
   align-items: center;
   box-shadow: 3px 3px 10px 1px #d4d4d4;
@@ -276,6 +283,7 @@ section h2 {
 @media screen and (min-width: 600px) {
   .sectionLabel {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -284,7 +292,7 @@ section h2 {
 .insideLabel {
   position: relative;
   width: 90vw;
-  height: 250px;
+  height: 38vh;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0 0 16px #0000002e;
@@ -299,14 +307,14 @@ section h2 {
 
 .photo {
   width: 100%;
-  height: 180px;
+  height: 28vh;
   border-radius: 15px 15px 0px 0px;
   text-align: center;
   object-fit: cover;
 }
 
 section {
-  padding-top: 40px;
+  padding: 30px 0px 60px 0px;
 }
 
 section .new {
@@ -375,13 +383,9 @@ body {
 
 .photoMenu {
   width: 100vw;
-  height: 240px;
+  height: 35vh;
   text-align: center;
   object-fit: cover;
-}
-
-section {
-  padding: 0vh 3vw 0vh 3vw;
 }
 
 .labelTitle {
@@ -390,6 +394,19 @@ section {
   width: 35px;
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+
+.starter,
+.main,
+.desert {
+  padding: 0vw 4vw;
+}
+@media screen and (min-width: 600px) {
+  .starter,
+.main,
+.desert {
+    padding: 0vw 8vw;
+  }
 }
 
 .starterLabel {
@@ -436,7 +453,8 @@ section {
 .mainLabel .labelText2,
 .desertLabel .labelText1,
 .desertLabel .labelText2 {
-  width: 75vw;
+  width: 73vw;
+  padding-left: 2vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -459,8 +477,8 @@ section {
 .desertLabel:hover .labelText1,
 .desertLabel:hover .labelText2 {
   cursor: pointer;
-  transition: all 1s;
-  width: 67vw;
+  transition: width 1.5s ease-in;
+  width: 65vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -524,29 +542,29 @@ section {
 
 footer {
   padding-left: 5vw;
+  padding-top: 5vw;
   background-color: #353535;
   color: white;
   line-height: 2rem;
 }
-footer img {
-  padding-top: 20px;
-  width: 150;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
-}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 984px) {
   footer {
+    padding: 2vw 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
 }
-
-.footerLogo {
-  width: 5vw;
-  margin-right: 0.7rem;
+footer img {
+  width: 150px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
 }
 
+.footerLogo {
+  width: 3vw;
+  margin-right: 20px;
+}
 .footerLigne {
   display: flex;
   flex-direction: row;

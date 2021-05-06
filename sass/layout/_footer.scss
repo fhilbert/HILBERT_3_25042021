@@ -1,25 +1,28 @@
 footer{
     padding-left: 5vw;
+    padding-top: 5vw;
     background-color: rgb(53, 53, 53);
     color:white;
     line-height: 2rem;
-    img{
-        padding-top: 20px;
-        width: 150;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
-    }
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 984px){
+        padding: 2vw 5vw;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-    
-     }
- 
-}
+    }
+    img{
+        width: 150px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(129deg) brightness(106%) contrast(101%);
+    }
+ }
 .footerLogo{
-    width:5vw;
-    margin-right: 0.7rem;
+    width:3vw;
+    margin-right: 20px;
+    @media screen and (min-width: 600px){
+        
+
+    }
 }
 .footerLigne{
     display: flex;

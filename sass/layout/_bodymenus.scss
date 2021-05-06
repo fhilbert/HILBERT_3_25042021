@@ -5,12 +5,9 @@ body{
 }
 .photoMenu{
     width:100vw;
-    height: 240px;
+    height: 35vh;
     text-align: center;
     object-fit: cover;
-}
-section{
-    padding: 0vh 3vw 0vh 3vw;
 }
 .labelTitle{
     margin-top: 50px;
@@ -18,6 +15,17 @@ section{
     width:35px;
     margin-bottom: 15px;
     text-transform: uppercase;
+}
+.starter,
+.main,
+.desert{
+    padding: 0vw 4vw;
+    @media screen and (min-width: 600px){
+        padding: 0vw 8vw;
+    }   
+
+
+
 }
 .starterLabel{
     animation-delay: 0s;
@@ -33,7 +41,6 @@ section{
 .desertLabel{
     display: flex;
     justify-content: space-between;
-    //border: 2px solid aqua;
     background-color:white;
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
@@ -54,7 +61,9 @@ section{
    }
    .labelText1,
    .labelText2{
-       width:75vw;
+       
+       width:73vw;
+        padding-left: 2vw;
        overflow: hidden;
        white-space: nowrap;
        text-overflow: ellipsis;
@@ -70,14 +79,13 @@ section{
         .labelText1,
         .labelText2{
             cursor: pointer;
-            transition: all 1s;
-            width:67vw;
+            transition: width 1.5s ease-in;
+            width:65vw;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }     
         .check{
-            //width:0px;
             display: flex;
             width:15vw; 
             align-items: center;
@@ -121,7 +129,7 @@ section{
     background-image: linear-gradient($secondary,$primary);  
     box-shadow: $shadow;
     &:hover{
-        cursor: pointer;
+        cursor:pointer;
         box-shadow: $hovershadow;
         background-image: linear-gradient(lighten($secondary,5%),lighten($primary,5%)); 
     }

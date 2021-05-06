@@ -1,18 +1,15 @@
-body{
-    margin:0px;
-    font-family: Roboto, sans-serif;
-    background-color: rgb(246,246,246);
-}
 a{
 	color:black;
 	text-decoration: none;
 }
 h2{
-    font-size: 1.4rem;
+    margin:0;
+    font-size: 1.7rem;
     font-weight: bolder;
+    padding: 10vw 0vw 5vw 5vw;
 }
-.titleFunction{
-    margin: 20px;
+main{
+    background-color: white;
 }
 .function{
     display: flex;
@@ -26,7 +23,7 @@ h2{
     height:70px;
     width:90%;
     border-radius: 25px 15px 15px 25px;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
     background-color:rgb(246,246,246);
     //border: 1px solid green;
     align-items: center;
@@ -52,7 +49,7 @@ h2{
     background-color: $primary;
     align-items: center;
     justify-content: center;
-    }
+}
 .logo{
     color:grey;
     font-size:1.2rem;
@@ -73,6 +70,7 @@ section{
     align-items: center;
     @media screen and (min-width: 600px){
        display: flex;
+       justify-content: space-evenly;
        flex-direction: row;
        flex-wrap: wrap;
     }
@@ -80,7 +78,8 @@ section{
 .insideLabel{
     position: relative;
     width: 90vw; // 340 x 250
-    height: 250px;
+    // height: 250px;
+    height: 38vh;
 	border-radius: 15px;
 	background-color: white;
     box-shadow: 0 0 16px #0000002e;
@@ -89,17 +88,17 @@ section{
         width: 40vw;
         margin: 3vw;
      }
- 
 }
 .photo{
     width:100%;
-    height: 180px;
+    height: 28vh;
+    // height: 180px; 
     border-radius: 15px 15px 0px 0px;
     text-align: center;
     object-fit: cover;
 }
 section{
-    padding-top: 40px;
+    padding: 30px 0px 60px 0px;
 }
 section .new{
     position: absolute;
