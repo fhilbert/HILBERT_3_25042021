@@ -18,14 +18,11 @@ body{
 }
 .starter,
 .main,
-.desert{
+.desert{ 
     padding: 0vw 4vw;
     @media screen and (min-width: 600px){
         padding: 0vw 8vw;
     }   
-
-
-
 }
 .starterLabel{
     animation-delay: 0s;

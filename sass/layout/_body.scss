@@ -6,7 +6,7 @@ h2{
     margin:0;
     font-size: 1.7rem;
     font-weight: bolder;
-    padding: 10vw 0vw 5vw 5vw;
+    padding: 6vh 0vw 5vh 5vw;
 }
 main{
     background-color: white;
@@ -39,7 +39,7 @@ main{
 }
 .number{
     display: flex;
-    border: 2px solid $primary;
+    border: 2px solid $primary; 
     border-radius: 100%;
     margin-left: -0.7rem;
     margin-right: 20px;
@@ -99,6 +99,11 @@ section{
 }
 section{
     padding: 30px 0px 60px 0px;
+    @media screen and (min-width: 600px){
+        padding: 20px 0px 40px 0px;
+     }
+
+
 }
 section .new{
     position: absolute;

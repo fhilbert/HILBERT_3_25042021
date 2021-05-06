@@ -251,7 +251,7 @@ h2 {
   margin: 0;
   font-size: 1.7rem;
   font-weight: bolder;
-  padding: 10vw 0vw 5vw 5vw;
+  padding: 6vh 0vw 5vh 5vw;
 }
 
 main {
@@ -357,6 +357,11 @@ section h2 {
 
 section {
   padding: 30px 0px 60px 0px;
+}
+@media screen and (min-width: 600px) {
+  section {
+    padding: 20px 0px 40px 0px;
+  }
 }
 
 section .new {
