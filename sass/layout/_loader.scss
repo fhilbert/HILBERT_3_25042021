@@ -11,10 +11,10 @@ body{
     align-items: center;
     z-index: 5;
     background-image: linear-gradient($secondary,$primary);  
-    opacity: 1Ò;
+    opacity: 1;
     animation: disappear 3000ms 1s ease-in-out forwards; 
     .loading-logo {
-        width: 5vw;
+        width: 5vw; 
         color: $tertiairy;
         animation: spin 3000ms  ease-in-out forwards;
         animation-iteration-count: 1;  

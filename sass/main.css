@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @-webkit-keyframes disappear {
   0%, 60% {
     opacity: 1;
@@ -89,7 +88,7 @@ body {
   align-items: center;
   z-index: 5;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  opacity: 1Ò;
+  opacity: 1;
   -webkit-animation: disappear 3000ms 1s ease-in-out forwards;
           animation: disappear 3000ms 1s ease-in-out forwards;
 }
@@ -236,7 +235,7 @@ header {
 }
 .menus-heart2:hover {
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1.5s;
 }
 .menus-heart2:hover::after {
   content: "";
@@ -406,7 +405,7 @@ section .new {
 }
 .heart2:hover {
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1.5s;
 }
 .heart2:hover::after {
   content: "";
@@ -532,7 +531,7 @@ body {
 .desertLabel:hover .labelText1,
 .desertLabel:hover .labelText2 {
   cursor: pointer;
-  transition: width 1.5s ease-in;
+  transition: width 1s ease-in;
   width: 65vw;
   overflow: hidden;
   white-space: nowrap;
@@ -552,7 +551,7 @@ body {
 .starterLabel:hover .check i,
 .mainLabel:hover .check i,
 .desertLabel:hover .check i {
-  transition: transform 1s;
+  transition: transform 0.8s;
   transform: rotate(360deg);
   color: white;
 }
@@ -623,6 +622,7 @@ footer img {
   width: 3vw;
   margin-right: 20px;
 }
+
 .footerLigne {
   display: flex;
   flex-direction: row;

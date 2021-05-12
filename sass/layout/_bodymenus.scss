@@ -42,7 +42,6 @@ body{
     margin-bottom: 20px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: $shadow;
-   // padding:10px 20px 10px 10px;
     position: relative;
     animation: slide;
     animation-duration: 5s;
@@ -76,8 +75,8 @@ body{
         .labelText1,
         .labelText2{
             cursor: pointer;
-            transition: width 1.5s ease-in;
-            width:65vw;
+            transition: width 1s ease-in;
+            width:65vw; 
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -91,7 +90,7 @@ body{
             color: $tertiairy;
             background-color: $tertiairy;
             i{
-                transition: transform 1s;
+                transition: transform 0.8s;
                 transform: rotate(360deg);
                 color: white;
             }

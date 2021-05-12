@@ -7,7 +7,7 @@ header{
     height:5vh;
 }
 .logo{
-    width: 150px; // 150
+    width: 150px;
 }
 #arrow{
     width: 20px;
@@ -75,7 +75,6 @@ header{
 
     }
 }
-
 //-------- menus restaurants -----------------
 .headerRestaurant{
     display: flex;
@@ -104,7 +103,7 @@ header{
     @include heart;
     opacity:1; 
     font-size: 24px;  
-    top: 35px;
+    top: 35px; 
     right: 8%;
     cursor: pointer;
 }
@@ -117,13 +116,10 @@ header{
     right: 8%;
     &:hover{
         opacity:1;
-        transition: opacity 2s;
+        transition: opacity 1.5s;
         &::after{
             content:"";
             opacity:1;
         }   
     }
 }
-
-
-
